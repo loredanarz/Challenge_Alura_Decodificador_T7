@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/decodificador.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="div-h1"><h1>Challenger Iniciante em Programação - Alura T7</h1></div> 
+        <div id="div-icon">
+            <a href="https://github.com/loredanarz" target="_blank"><img src="img/icons8-github.svg" alt="" class="icon-git"> </a>
+            <a href="https://www.linkedin.com/in/loredanarz" target="_blank"><img src="img/icons8-linkedin.svg" alt="" class="icon-git"></a>
+        </div>
+        
+    </header>
+    
+    <!-- Main --->
+    <main class="main">
+
+        <!--- Seccion Uno --->
+        <section class="seccion-uno">
+            <div class="div-textArea">
+                <textarea id="textArea" placeholder="Escreva seu texto aqui!" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="botones">
+                
+                <button type="button" id="criptografar" onclick="criptografar()"> Criptografar</button>
+                <button type="button" id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+                <button type="button" id="limpar" onclick="borrarTexto()">Limpar</button>
+            </div>
+        </section>
+
+        <!--- Seccion Imagen --->
+        <section class="seccion-imagen">
+            <div class="conten-imagen">
+                <img src="img/cat-2.jpg" id="imagen">
+            </div>
+            <div class="parrafo">
+                <h3 id="h3-encontrado">Nenhuma mensagem encontrada</h3>
+                <textarea name="" id="textoDesencriptado" cols="30" rows="10"
+                    placeholder="Digite um texto que deseja criptografar ou descriptografar"></textarea>
+                <button type="button" value="boton-copiar" id="boton-copiar" onclick="copy()">Copiar texto</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Feito por <span><a href="https://github.com/loredanarz"
+                    target="_blank">loredanarz :) </span></a></p>
+    </footer>
+
+</body>
+
+</html>
